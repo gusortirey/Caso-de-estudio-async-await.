@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de estudio async/await</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ejercicios Async/Await</h1>
+            <p class="authors">Gustavo Ortiz Reyes 240300736</p>
+        </div>
+
+        <div class="exercises-section">
+            <!-- Callback a Async/Await -->
+            <div class="exercise-card">
+                <h2 class="exercise-title">Callback a Async/Await</h2>
+                <p class="exercise-description">Conversion de setTimeout() con callback a async/await</p>
+                
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="ejecutarCallback()">Callback Original</button>
+                    <button class="btn btn-secondary" onclick="ejecutarAsyncAwait()">Async/Await</button>
+                    <button class="btn btn-primary" onclick="limpiarResultado1()">Limpiar</button>
+                </div>
+
+                <div id="resultado1" class="result-box">
+                    <p class="loading">Presiona un boton para ver el resultado...</p>
+                </div>
+            </div>
+
+            <!--  Consulta a API con Async/Await -->
+            <div class="exercise-card">
+                <h2 class="exercise-title">Consulta a API con Async/Await</h2>
+                <p class="exercise-description">Consulta a API de usuarios con async/await</p>
+                
+                <div class="btn-group">
+                    <button class="btn btn-secondary" onclick="consultarAPI()">Consultar API</button>
+                    <button class="btn btn-primary" onclick="limpiarResultado2()">Limpiar</button>
+                </div>
+
+                <div id="resultado2" class="result-box">
+                    <p class="loading">Presiona "Consultar API" para ver los datos...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
